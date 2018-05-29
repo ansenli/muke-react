@@ -16,7 +16,7 @@ class App extends React.Component{
                 <h1>现在有机枪 {num}</h1>
                 <button onClick ={()=>store.dispatch(addGUM())}>申请武器</button>
                 <button onClick ={()=>store.dispatch(removeGUM())}>上交武器</button>
-                <button onClick ={()=>store.dispatch(addGunAsync())}>延迟两秒</button>
+                <button onClick ={()=>store.dispatch(addGunAsync())}>延迟两秒a</button>
 
 
             </div>
