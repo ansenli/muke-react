@@ -2,15 +2,15 @@ const ADD_GUM = 'ADD_GUM';
 const REMOVE_GUM = 'REMOVE_GUM';
 
 
-export function counter(state = 0, action) {
-
+export function counter(state = 10, action) {
+    console.log("indexredux",state)
     switch (action.type) {
         case 'ADD_GUM':
             return state + 1;
         case 'REMOVE_GUM':
             return state - 1;
         default:
-            return 10;
+            return state;
     }
 
 }

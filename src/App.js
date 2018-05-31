@@ -18,7 +18,7 @@ import { addGUM, removeGUM, addGunAsync} from './index.redux';
 @connect(
     // 你要state 什么属性放到props里
     (state) => ({
-        num: state
+        num: state.counter
     }),
     // 你要什么方法放到 props里，自动dispatch
     {
@@ -29,6 +29,7 @@ import { addGUM, removeGUM, addGunAsync} from './index.redux';
 )
 class App extends React.Component{
     render() {
+        console.log("this.props app",this.props)
         return (
             <div>
                 {/* < Chlid 
